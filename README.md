@@ -3,14 +3,32 @@
 
 # qraLm <a href='https://github.com/WorldHealthOrganization/qraLm/docs/'><img src='man/figures/hex-qraLm.png' align="right" height="80" /></a>
 
-A R package to develop quantitative risk assessment for *L.
-monocytogenes* in Frozen Vegetables, Diced RTE Cantaloupe and
-Cold-smoked RTE Fish.
+The qraLm R package is designed to conduct quantitative risk assessments
+(QRA) specifically for *Listeria monocytogenes* in various food
+products, including frozen vegetables, ready-to-eat (RTE) diced
+cantaloupe, and cold-smoked fish. The package was developed as part of
+the work under the [Joint FAO/WHO Expert Meetings on Microbiological
+Risk Assessment
+(JEMRA)](https://www.who.int/publications/m/item/jemra-of-listeria-monocytogenes-in-foods).
 
-- Version developed under the scope of the [Joint
-  FAO/WHO](https://www.who.int/publications/m/item/jemra-of-listeria-monocytogenes-in-foods)
-  Expert meeting on microbiological risk assessment of Listeria
-  monocytogenes in foods.
+## Key Features:
+
+- Dose-Response Models: The package includes models to assess the risk
+  based on different strain virulence and population susceptibility
+  (age, health conditions).
+
+- Monte Carlo Simulations: It supports simulations to estimate risks at
+  various stages of the food production chain, from processing to
+  consumer handling practices.
+
+- Specific Food Pathways: Different modules represent distinct pathways
+  for contamination and risk for each food type, such as blanching,
+  packaging, and defrosting in frozen vegetables, or cross-contamination
+  and processing stages in cold-smoked fish and cantaloupe.
+
+- Shiny Application: A built-in Shiny app allows users to interactively
+  simulate risk assessments for different food types and contamination
+  scenarios.
 
 ## Installation
 
