@@ -1,19 +1,21 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# qraLm <a href='https://vcadavez.github.io/qraLm/docs/'><img src='man/figures/hex-qraLm.png' align="right" height="80" /></a>
+# qraLm <a href='https://github.com/WorldHealthOrganization/qraLm/docs/'><img src='man/figures/hex-qraLm.png' align="right" height="80" /></a>
 
 A R package to develop quantitative risk assessment for *L.
 monocytogenes* in Frozen Vegetables, Diced RTE Cantaloupe and
 Cold-smoked RTE Fish.
 
-- Version developed scope of the [JEMRA
-  workgroup](https://www.who.int/publications/m/item/jemra-of-listeria-monocytogenes-in-foods).
+- Version developed under the scope of the [Joint
+  FAO/WHO](https://www.who.int/publications/m/item/jemra-of-listeria-monocytogenes-in-foods)
+  Expert meeting on microbiological risk assessment of Listeria
+  monocytogenes in foods.
 
 ## Installation
 
 - You can install `qraLm` from [GitHub:
-  https://github.com/vcadavez/qraLm](https://github.com/vcadavez/qraLm)
+  https://github.com/WorldHealthOrganization/qraLm](https://github.com/WorldHealthOrganization/qraLm)
   using the `devtools` package, with the R code below.
 
 - You must first install the `doseresponsemodels` package from [github:
@@ -32,15 +34,16 @@ Cold-smoked RTE Fish.
 ``` r
 
 if (!require("devtools")) install.packages("devtools")
-devtools::install_github("vcadavez/doseresponsemodels")
-devtools::install_github("vcadavez/qraLm")
+devtools::install_github("rpouillot/doseresponsemodels")
+devtools::install_github("https://github.com/WorldHealthOrganization/qraLm")
 ```
 
 ## Using qraLm
 
 You can find the vignettes at the `qraLm` website:
-<https://vcadavez.github.io/qraLm/>.
+<https://github.com/WorldHealthOrganization/qraLm/>.
 
 ## Reporting bugs
 
-You can report bugs at: <https://github.com/vcadavez/qraLm/issues>.
+You can report bugs at:
+<https://github.com/WorldHealthOrganization/qraLm/issues>.
