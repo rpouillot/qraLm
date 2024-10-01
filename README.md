@@ -37,7 +37,7 @@ Risk Assessment
   using the `devtools` package, with the R code below.
 
 - You must first install the `doseresponsemodels` package from [github:
-  https://github.com/vcadavez/doseresponsemodels](https://github.com/vcadavez/doseresponsemodels),
+  https://github.com/WorldHealthOrganization/DRLm/](https://github.com/WorldHealthOrganization/DRLm/),
   which implements the dose-response models for Listeria monocytogenes.
 
 - For Windows users it is recommended to install [Rtools:
@@ -52,7 +52,7 @@ Risk Assessment
 ``` r
 
 if (!require("devtools")) install.packages("devtools")
-devtools::install_github("rpouillot/doseresponsemodels")
+devtools::install_github("https://github.com/WorldHealthOrganization/DRLm/")
 devtools::install_github("https://github.com/WorldHealthOrganization/qraLm")
 ```
 
