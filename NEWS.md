@@ -1,10 +1,5 @@
 
-# [qraLm 0.1.2](https://github.com/WorldHealthOrganization/qraLm/releases/tag/v.0.1.2) <small>2024-09-30</small>
-
-- Summary functions updated
-- qraLmShiny integraded
-
-# [qraLm 0.1.1](https://github.com/WorldHealthOrganization/qraLm//tag/v.0.1.1) <small>2024-02-05</small>
+# [qraLm 0.1.0](https://github.com/WorldHealthOrganization/qraLm/releases/tag/v.0.1.0) <small>2024-09-30</small>
 
 - Quantitative risk assessment models
   - Frozen Vegetables
