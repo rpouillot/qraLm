@@ -30,7 +30,7 @@ population = 2
 res <- DRForModel(dat, 
                   model=DRmodel,
                   population = population)
-
+str(res)
 summaryRiskLot.qraLm(res)
 
 }

@@ -27,7 +27,7 @@
 #' res <- DRForModel(dat, 
 #'                   model=DRmodel,
 #'                   population = population)
-#' 
+#' str(res)
 #' summaryRiskLot.qraLm(res)
 #'
 #' @export
@@ -35,16 +35,12 @@
 summaryRiskLot.qraLm <- function(x, ...) {
   # if (class(x)!= "qraLm")
   #   stop("object is not of class 'qraLm'")
-  
-  lotMeanRisk <- x$lotMeanRisk
-  
+
   log_risk = function(x){
     ifelse(x!=0, log10(x), 0)
   }
-  wRiskLotMeanlog  <- log_risk(wRiskLotMean)
-  
-#  lotMeanRiskLog <-  log10(lotMeanRisk)
-  
+  lotMeanRiskLog  <- log_risk(x$lotMeanRisk)
+
 riskMin <- min(lotMeanRiskLog)
 riskMax <- max(lotMeanRiskLog)
 riskMedian <- stats::quantile(lotMeanRiskLog, probs = c(0.50), na.rm = TRUE)

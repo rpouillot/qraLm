@@ -33,7 +33,7 @@
     
     <a class="navbar-brand me-2" href="index.html">qraLm</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
 
       <ul class="navbar-nav">
 <li class="nav-item">
-  <a class="external-link nav-link" href="https://github.com/vcadavez/qraLm/" aria-label="github">
+  <a class="external-link nav-link" href="https://github.com/WorldHealthOrganization/qraLm/" aria-label="github">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -75,45 +75,52 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header">
-<img src="logo.png" class="logo" alt=""><h1 id="qralm-">qraLm <a href="https://vcadavez.github.io/qraLm/docs/"><img src="reference/figures/hex-qraLm.png" align="right" height="80"></a>
+<img src="logo.png" class="logo" alt=""><h1 id="qralm-">qraLm <a href="https://github.com/WorldHealthOrganization/qraLm/docs/" class="external-link"><img src="reference/figures/hex-qraLm.png" align="right" height="80"></a>
 <a class="anchor" aria-label="anchor" href="#qralm-"></a>
 </h1>
 </div>
-<p>A R package to develop quantitative risk assessment for <em>L. monocytogenes</em> in Frozen Vegetables, Diced RTE Cantaloupe and Cold-smoked RTE Fish.</p>
+<p>The qraLm R package is designed to conduct quantitative risk assessments (QRA) specifically for <em>Listeria monocytogenes</em> in various food products, including frozen vegetables, ready-to-eat (RTE) diced cantaloupe, and cold-smoked fish. The package was developed as part of the work under the <a href="https://www.who.int/publications/m/item/jemra-of-listeria-monocytogenes-in-foods" class="external-link">Joint FAO/WHO Expert Meetings on Microbiological Risk Assessment (JEMRA)</a>.</p>
+<div class="section level2">
+<h2 id="key-features">Key Features:<a class="anchor" aria-label="anchor" href="#key-features"></a>
+</h2>
 <ul>
-<li>Version developed scope of the <a href="https://www.who.int/publications/m/item/jemra-of-listeria-monocytogenes-in-foods" class="external-link">JEMRA workgroup</a>.</li>
+<li><p>Dose-Response Models: The package includes models to assess the risk based on different strain virulence and population susceptibility (age, health conditions).</p></li>
+<li><p>Monte Carlo Simulations: It supports simulations to estimate risks at various stages of the food production chain, from processing to consumer handling practices.</p></li>
+<li><p>Specific Food Pathways: Different modules represent distinct pathways for contamination and risk for each food type, such as blanching, packaging, and defrosting in frozen vegetables, or cross-contamination and processing stages in cold-smoked fish and cantaloupe.</p></li>
+<li><p>Shiny Application: A built-in Shiny app allows users to interactively simulate risk assessments for different food types and contamination scenarios.</p></li>
 </ul>
+</div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <ul>
-<li><p>You can install <code>qraLm</code> from <a href="https://github.com/vcadavez/qraLm" class="external-link">GitHub: https://github.com/vcadavez/qraLm</a> using the <code>devtools</code> package, with the R code below.</p></li>
-<li><p>You must first install the <code>doseresponsemodels</code> package from <a href="https://github.com/vcadavez/doseresponsemodels" class="external-link">github: https://github.com/vcadavez/doseresponsemodels</a>, which implements the dose-response models for Listeria monocytogenes.</p></li>
+<li><p>You can install <code>qraLm</code> from <a href="https://github.com/WorldHealthOrganization/qraLm" class="external-link">GitHub: https://github.com/WorldHealthOrganization/qraLm</a> using the <code>devtools</code> package, with the R code below.</p></li>
+<li><p>You must first install the <code>doseresponsemodels</code> package from <a href="https://github.com/WorldHealthOrganization/DRLm/" class="external-link">github: https://github.com/WorldHealthOrganization/DRLm/</a>, which implements the dose-response models for Listeria monocytogenes.</p></li>
 <li><p>For Windows users it is recommended to install <a href="https://cran.r-project.org/bin/windows/Rtools/" class="external-link">Rtools: https://cran.r-project.org/bin/windows/Rtools/</a> before.</p></li>
 <li><p>The packages on which <code>qraLm</code> depends are: <code>Hmisc</code>, <code>extraDistr</code>, <code>mc2d</code>, <code>matrixStats</code>, <code>DT</code>, <code>dplyr</code>, <code>ggplot2</code>, <code>plotly</code>, <code>doseresponsemodels</code> and <code>BH</code>; you should install them before installing <code>qraLm</code>.</p></li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://devtools.r-lib.org/" class="external-link">"devtools"</a></span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"vcadavez/doseresponsemodels"</span><span class="op">)</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"vcadavez/qraLm"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"https://github.com/WorldHealthOrganization/DRLm/"</span><span class="op">)</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"https://github.com/WorldHealthOrganization/qraLm"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="using-qralm">Using qraLm<a class="anchor" aria-label="anchor" href="#using-qralm"></a>
 </h2>
-<p>You can find the vignettes at the <code>qraLm</code> website: <a href="https://vcadavez.github.io/qraLm/" class="uri">https://vcadavez.github.io/qraLm/</a>.</p>
+<p>You can find the vignettes at the <code>qraLm</code> website: <a href="https://github.com/WorldHealthOrganization/qraLm/" class="external-link uri">https://github.com/WorldHealthOrganization/qraLm/</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="reporting-bugs">Reporting bugs<a class="anchor" aria-label="anchor" href="#reporting-bugs"></a>
 </h2>
-<p>You can report bugs at: <a href="https://github.com/vcadavez/qraLm/issues" class="external-link uri">https://github.com/vcadavez/qraLm/issues</a>.</p>
+<p>You can report bugs at: <a href="https://github.com/WorldHealthOrganization/qraLm/issues" class="external-link uri">https://github.com/WorldHealthOrganization/qraLm/issues</a>.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/vcadavez/qraLm/" class="external-link">Browse source code</a></li>
-<li><a href="https://github.com/vcadavez/qraLm/issues" class="external-link">Report a bug</a></li>
+<li><a href="https://github.com/WorldHealthOrganization/qraLm/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/WorldHealthOrganization/qraLm/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
