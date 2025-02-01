@@ -1,6 +1,6 @@
 Package: qraLm
 Title: Functions to develop quantitative risk assessment for Listeria monocytogenes in foods
-Version: 0.1.2
+Version: 0.1.0
 Authors@R: c(
     person("Vasco", "Cadavez", , "vcadavez@ipb.pt", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-3077-7414")),
@@ -31,5 +31,5 @@ NeedsCompilation: no
 Suggests: knitr, rmarkdown, htmltools, mosaic, testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Maintainer: Vasco Cadavez <vcadavez@ipb.pt>
-Packaged: 2024-07-29 18:00:43 UTC
+Packaged: 2024-10-01 16:00:43 UTC
 Config/testthat/edition: 3

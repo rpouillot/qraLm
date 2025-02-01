@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 url: https://github.com/WorldHealthOrganization/qraLm
+=======
+url: https://worldhealthorganization.github.io/qraLm/
+>>>>>>> 66308643c3f730aaa9dc68f0950913f81a56978e
 
 home:
   title: qraLm
@@ -114,5 +118,10 @@ reference:
 
 news:
   releases:
+<<<<<<< HEAD
   - text: "Version 0.1.2"
     href: https://github.com/WorldHealthOrganization/qraLm
+=======
+  - text: "Version 0.1.0"
+    href: https://worldhealthorganization.github.io/qraLm/
+>>>>>>> 66308643c3f730aaa9dc68f0950913f81a56978e
