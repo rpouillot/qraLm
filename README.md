@@ -3,15 +3,14 @@
 
 # qraLm <a href='https://github.com/WorldHealthOrganization/qraLm/docs/'><img src='man/figures/hex-qraLm.png' align="right" height="80" /></a>
 
-The qraLm R package is designed to conduct quantitative risk assessments
-(QRA) specifically for *Listeria monocytogenes* in various food
-products, including frozen vegetables, ready-to-eat (RTE) diced
-cantaloupe, and cold-smoked fish. The package was developed as part of
-the work under the [Joint FAO/WHO Expert Meetings on Microbiological
-Risk Assessment
+The qraLm R package is designed for conducting Quantitative Risk
+Assessments (QRA) for *Listeria monocytogenes* in various food products.
+These include frozen vegetables, ready-to-eat (RTE) diced cantaloupe,
+and cold-smoked fish. The package was developed as part of the [Joint
+FAO/WHO Expert Meetings on Microbiological Risk Assessment
 (JEMRA)](https://www.who.int/publications/m/item/jemra-of-listeria-monocytogenes-in-foods).
 
-## Key Features:
+## Key Features
 
 - Dose-Response Models: The package includes models to assess the risk
   based on different strain virulence and population susceptibility
@@ -32,28 +31,26 @@ Risk Assessment
 
 ## Installation
 
-- You can install `qraLm` from [GitHub:
-  https://github.com/WorldHealthOrganization/qraLm](https://github.com/WorldHealthOrganization/qraLm)
+- You can install `qraLm` from [`GitHub`
+  (\[https://github.com/WorldHealthOrganization/qraLm\]](https://github.com/WorldHealthOrganization/qraLm))
   using the `devtools` package, with the R code below.
 
-- You must first install the `doseresponsemodels` package from [github:
-  https://github.com/vcadavez/doseresponsemodels](https://github.com/vcadavez/doseresponsemodels),
-  which implements the dose-response models for Listeria monocytogenes.
+- You must first install the `DRLm` package from `GitHub`
+  (<https://github.com/WorldHealthOrganization/DRLm>), which implements
+  the dose-response models for Listeria monocytogenes.
 
-- For Windows users it is recommended to install [Rtools:
-  https://cran.r-project.org/bin/windows/Rtools/](https://cran.r-project.org/bin/windows/Rtools/)
-  before.
+- For Windows users it is recommended to install `Rtools`
+  (<https://cran.r-project.org/bin/windows/Rtools/>) before.
 
 - The packages on which `qraLm` depends are: `Hmisc`, `extraDistr`,
-  `mc2d`, `matrixStats`, `DT`, `dplyr`, `ggplot2`, `plotly`,
-  `doseresponsemodels` and `BH`; you should install them before
-  installing `qraLm`.
+  `mc2d`, `matrixStats`, `DT`, `dplyr`, `ggplot2`, `plotly`, `DRLm` and
+  `BH`; you should install them before installing `qraLm`.
 
 ``` r
 
 if (!require("devtools")) install.packages("devtools")
-devtools::install_github("rpouillot/doseresponsemodels")
-devtools::install_github("https://github.com/WorldHealthOrganization/qraLm")
+devtools::install_github("WorldHealthOrganization/DRLm")
+devtools::install_github("WorldHealthOrganization/qraLm")
 ```
 
 ## Using qraLm
