@@ -13,8 +13,8 @@ qraLm: A R package for quantitative risk assessment for Listeria monocytogenes i
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/vcadavez/qraLm}
-  \item Report bugs at \url{https://github.com/vcadavez/qraLm/issues}
+  \item \url{https://github.com/WorldHealthOrganization/qraLm}
+  \item Report bugs at \url{https://github.com/WorldHealthOrganization/qraLm/issues}
 }
 
 }

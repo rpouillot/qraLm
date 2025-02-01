@@ -1,4 +1,4 @@
-url: https://vcadavez.github.io/qraLm/
+url: https://github.com/WorldHealthOrganization/qraLm
 
 home:
   title: qraLm
@@ -115,4 +115,4 @@ reference:
 news:
   releases:
   - text: "Version 0.1.2"
-    href: https://github.com/vcadavez/qraLm/
+    href: https://github.com/WorldHealthOrganization/qraLm

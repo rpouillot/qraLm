@@ -28,26 +28,24 @@ sf_Risk_server <- function(input, output, session, suffix, datPort) {
   return(datRisk)
 }
 
-generate_datRisk <- function(input, prefix, datPort) {
+generate_datRisk <- function(input, prefix, datCook) {
+  model <- get_input_value(input, prefix, "Model")
+  population <- switch(model,
+                       "JEMRA" = get_input_value(input, prefix, "PopulationJEMRA"),
+                       "EFSA" = get_input_value(input, prefix, "PopulationEFSA"),
+                       "EFSALV" = get_input_value(input, prefix, "PopulationEFSALV"),
+                       "EFSAV" = get_input_value(input, prefix, "PopulationEFSAV"),
+                       "EFSAMV" = get_input_value(input, prefix, "PopulationEFSAMV"),
+                       "Pouillot" = get_input_value(input, prefix, "PopulationPouillot"),
+                       "Fritsch" = get_input_value(input, prefix, "PopulationFritsch"),
+                       stop("Invalid model selected")
+  )
+  
   df <- DRForModel(
-    datPort(),
-    model = get_input_value(input, prefix, "Model"),
-    if (get_input_value(input, prefix, "Model") == "JEMRA") {
-      population = get_input_value(input, prefix, "PopulationJEMRA")
-    } else if (get_input_value(input, prefix, "Model") == "EFSA") {
-      population = get_input_value(input, prefix, "PopulationEFSA")
-    } else if (get_input_value(input, prefix, "Model") == "EFSALV") {
-      population = get_input_value(input, prefix, "PopulationEFSALV")
-    } else if (get_input_value(input, prefix, "Model") == "EFSAV") {
-      population = get_input_value(input, prefix, "PopulationEFSAV")
-    } else if (get_input_value(input, prefix, "Model") == "EFSAMV") {
-      population = get_input_value(input, prefix, "PopulationEFSAMV")
-    } else if(get_input_value(input, prefix, "Model") == "Pouillot") {
-      population = get_input_value(input, prefix, "PopulationPouillot")
-    } else {
-      population = get_input_value(input, prefix, "PopulationFritsch")
-    },
-    Poisson = TRUE
+    datCook(),
+    model = model,
+    population = population,
+    Poisson = FALSE
   )
   return(df)
 }
