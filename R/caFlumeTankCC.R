@@ -47,7 +47,7 @@
 #' @importFrom mc2d rmultinomial rdirichlet
 #' @importFrom stats rbinom rmultinom
 #' @importFrom utils data
-#'
+#' @import Rdpack
 #' @export
 #'
 #' @note  Write a note!

@@ -39,7 +39,7 @@
 #'
 #' @importFrom mc2d rpert
 #' @importFrom utils data
-#'
+#' @import Rdpack
 #' @export
 #'
 #' @note The matrix `N` is returned in a sublot arrangement, meaning that the number of rows corresponds to the number of sublots,

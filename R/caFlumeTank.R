@@ -42,7 +42,7 @@
 #' @importFrom mc2d rmultinomial rdirichlet
 #' @importFrom stats rbinom rmultinom
 #' @importFrom utils data
-#'
+#' @import Rdpack
 #' @export
 #'
 #' @note Since surviving cells are distributed in water, a value  of `b` higher than 1 should be used to assume

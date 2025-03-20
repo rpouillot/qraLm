@@ -51,7 +51,8 @@
 #'
 #' @importFrom stats rbinom
 #' @importFrom extraDistr rtnorm
-#'
+#' @import Rdpack
+#' 
 #' @export
 #'
 #' @note Data on the survival of \emph{L. monocytogenes} on the intact rind of two varieties of cantaloupe stored at 4, 10 and 25 \eqn{^\circ} C were

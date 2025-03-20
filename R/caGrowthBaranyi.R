@@ -31,23 +31,16 @@
 #' @references
 #'
 #' \insertRef{stats}{qraLm}
-#'
 #' \insertRef{Danyluk2014}{qraLm}
-#'
 #' \insertRef{Fang2013}{qraLm}
-#'
 #' \insertRef{Farber1998}{qraLm}
-#'
 #' \insertRef{Guzel2017}{qraLm}
-#'
 #' \insertRef{Hong2014}{qraLm}
-#'
 #' \insertRef{Moreira2019}{qraLm}
-#'
 #' \insertRef{Patil2017}{qraLm}
-#'
 #' \insertRef{Ukuku2002}{qraLm}
-#'
+#' 
+#' @import Rdpack
 #' @export
 #'
 #' @note The parameters `Tmin` and `EGR5` were obtained by fitting a square-root model to growth data

@@ -37,7 +37,7 @@
 #'
 #' @importFrom stats rbinom
 #' @importFrom extraDistr rtnorm
-#'
+#' @import Rdpack
 #' @export
 #'
 #' @note The algorithm evaluates the cross-contamination event at cantaloupe level (and not at cultivation lot level), assuming that

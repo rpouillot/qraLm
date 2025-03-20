@@ -40,15 +40,13 @@
 #' @references
 #'
 #' \insertRef{mc2d}{qraLm}
-#'
 #' \insertRef{Carrasco2010}{qraLm}
-#'
 #' \insertRef{Ding2013}{qraLm}
-#'
 #' \insertRef{Nauta2003}{qraLm}
 #'
 #' @importFrom mc2d rpert
-#'
+#' @import Rdpack
+#' 
 #' @export
 
 #' @note

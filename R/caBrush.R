@@ -34,7 +34,7 @@
 #' \insertRef{Fu2020}{qraLm}
 #'
 #' @importFrom stats rbinom
-#'
+#' @import Rdpack
 #' @export
 #'
 #' @note

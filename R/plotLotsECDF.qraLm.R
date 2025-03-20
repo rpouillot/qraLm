@@ -7,8 +7,8 @@
 #'
 #' @return A `plotly` interactive ECDF plot.
 #'
-#' @import ggplot2
-#' @import plotly
+#' @importFrom ggplot2 ggplot aes stat_ecdf xlab ylab theme_minimal
+#' @importFrom plotly ggplotly
 #' @export
 #'
 #' @examples

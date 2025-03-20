@@ -31,19 +31,13 @@ FAO/WHO Expert Meetings on Microbiological Risk Assessment
 
 ## Installation
 
-- You can install `qraLm` from [`GitHub`
-  (\[https://github.com/WorldHealthOrganization/qraLm\]](https://github.com/WorldHealthOrganization/qraLm))
-  using the `devtools` package, with the R code below.
+- You can install `qraLm` from `GitHub`:
+  <https://github.com/WorldHealthOrganization/qraLm>, using the
+  `devtools` package, with the R code below.
 
-<<<<<<< HEAD
-- You must first install the `DRLm` package from `GitHub`
-  (<https://github.com/WorldHealthOrganization/DRLm>), which implements
+- You must first install the `DRLm` package from `GitHub`:
+  <https://github.com/WorldHealthOrganization/DRLm/>, which implements
   the dose-response models for Listeria monocytogenes.
-=======
-- You must first install the `DRLm` package from [github:
-  https://github.com/WorldHealthOrganization/DRLm/](https://github.com/WorldHealthOrganization/DRLm/),
-  which implements the dose-response models for Listeria monocytogenes.
->>>>>>> 66308643c3f730aaa9dc68f0950913f81a56978e
 
 - For Windows users it is recommended to install `Rtools`
   (<https://cran.r-project.org/bin/windows/Rtools/>) before.
@@ -55,13 +49,8 @@ FAO/WHO Expert Meetings on Microbiological Risk Assessment
 ``` r
 
 if (!require("devtools")) install.packages("devtools")
-<<<<<<< HEAD
 devtools::install_github("WorldHealthOrganization/DRLm")
 devtools::install_github("WorldHealthOrganization/qraLm")
-=======
-devtools::install_github("https://github.com/WorldHealthOrganization/DRLm/")
-devtools::install_github("https://github.com/WorldHealthOrganization/qraLm")
->>>>>>> 66308643c3f730aaa9dc68f0950913f81a56978e
 ```
 
 ## Using qraLm
