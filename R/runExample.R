@@ -13,7 +13,7 @@
 #'
 #' @export
 runExample <- function() {
-  appDir <- system.file("shiny-examples", "qraLmShiny", package = "qraLm")
+  appDir <- system.file("shiny-examples", "WT_qraLM", package = "qraLm")
   if (appDir == "") {
     stop("Could not find example directory. Try re-installing `qraLm`.", call. = FALSE)
   }

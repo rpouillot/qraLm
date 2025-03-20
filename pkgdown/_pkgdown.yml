@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 url: https://github.com/WorldHealthOrganization/qraLm
-=======
-url: https://worldhealthorganization.github.io/qraLm/
->>>>>>> 66308643c3f730aaa9dc68f0950913f81a56978e
 
 home:
   title: qraLm
@@ -110,18 +106,12 @@ reference:
   - expandedjamesonC
   - expandedjamesonC_set_params
 
-- title: qraLmShiny
+- title: WT_qraLM
   desc: Shiny application for simulation
   contents:
   - runExample
 
-
 news:
   releases:
-<<<<<<< HEAD
-  - text: "Version 0.1.2"
+  - text: "Version 0.1.1"
     href: https://github.com/WorldHealthOrganization/qraLm
-=======
-  - text: "Version 0.1.0"
-    href: https://worldhealthorganization.github.io/qraLm/
->>>>>>> 66308643c3f730aaa9dc68f0950913f81a56978e

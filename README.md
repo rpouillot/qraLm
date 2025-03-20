@@ -40,7 +40,7 @@ FAO/WHO Expert Meetings on Microbiological Risk Assessment
   (<https://github.com/WorldHealthOrganization/DRLm>), which implements
   the dose-response models for Listeria monocytogenes.
 =======
-- You must first install the `doseresponsemodels` package from [github:
+- You must first install the `DRLm` package from [github:
   https://github.com/WorldHealthOrganization/DRLm/](https://github.com/WorldHealthOrganization/DRLm/),
   which implements the dose-response models for Listeria monocytogenes.
 >>>>>>> 66308643c3f730aaa9dc68f0950913f81a56978e

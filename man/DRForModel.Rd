@@ -34,11 +34,11 @@ in a given \code{population} for a given \code{Dose} in \code{CFU} using the
 or the model developed within this project (\code{EFSAMV},\code{EFSAV},\code{EFSALV}) (see References).
 }
 \details{
-see \code{\link[doseresponsemodels:DR]{doseresponsemodels::DR()}} or \code{\link[doseresponsemodels:DRQuick]{doseresponsemodels::DRQuick()}} for details on population and models.
+see \code{\link[DRLm:DR]{DRLm::DR()}} or \code{\link[DRLm:DRQuick]{DRLm::DRQuick()}} for details on population and models.
 }
 \note{
 This function uses (for all model but \code{JEMRA}) a linear approximation (\code{approxfun})
-from the exact \code{\link[doseresponsemodels:DR]{doseresponsemodels::DR()}} model evaluated on \eqn{Dose = c(0,10^{seq(-5,12,length=1701)})}
+from the exact \code{\link[DRLm:DR]{DRLm::DR()}} model evaluated on \eqn{Dose = c(0,10^{seq(-5,12,length=1701)})}
 (if \code{Poisson=TRUE}) or \eqn{c(0,10^{seq(0,12,length=2000)})} (if \code{Poisson=FALSE}).
 Any Dose lower or higher than these ranges will lead to \code{NA}.
 }

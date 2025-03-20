@@ -16,7 +16,7 @@
 #' (actual LogNormal Poisson). If `FALSE` (default), assume that `Dose` is the actual number of bacteria.
 #'
 #' @details
-#' see [doseresponsemodels::DR()] or [doseresponsemodels::DRQuick()] for details on population and models.
+#' see [DRLm::DR()] or [DRLm::DRQuick()] for details on population and models.
 #'
 #'
 #' @author Regis Pouillot, Vasco Cadavez
@@ -30,9 +30,9 @@
 #' \insertRef{Fritsch2018}{qraLm}
 #' \insertRef{Pouillot2015}{qraLm}
 #'
-#' @importFrom doseresponsemodels DR
-#' @importFrom doseresponsemodels DRLogNormPoisson
-#' @importFrom doseresponsemodels DRQuick
+#' @importFrom DRLm DR
+#' @importFrom DRLm DRLogNormPoisson
+#' @importFrom DRLm DRQuick
 #'
 #' @return the data object with added:
 #'     \describe{
@@ -44,7 +44,7 @@
 #' @export
 #'
 #' @note This function uses (for all model but `JEMRA`) a linear approximation (`approxfun`)
-#' from the exact [doseresponsemodels::DR()] model evaluated on \eqn{Dose = c(0,10^{seq(-5,12,length=1701)})}
+#' from the exact [DRLm::DR()] model evaluated on \eqn{Dose = c(0,10^{seq(-5,12,length=1701)})}
 #' (if `Poisson=TRUE`) or \eqn{c(0,10^{seq(0,12,length=2000)})} (if `Poisson=FALSE`).
 #' Any Dose lower or higher than these ranges will lead to `NA`.
 #'
