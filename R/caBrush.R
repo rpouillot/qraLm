@@ -52,7 +52,7 @@
 #'                    logDecBrush = runif(nLots, min = 0, max = 10)
 #'                 )
 #' hist(brushed$N)
-#'                 
+#' 
 caBrush <- function(data = list(),
                     nLots = NULL,
                     sizeLot = NULL,

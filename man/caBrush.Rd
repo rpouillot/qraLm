@@ -48,7 +48,7 @@ brushed <- caBrush(df,
                    logDecBrush = runif(nLots, min = 0, max = 10)
                 )
 hist(brushed$N)
-                
+
 }
 \references{
 \insertRef{mc2d}{qraLm}
