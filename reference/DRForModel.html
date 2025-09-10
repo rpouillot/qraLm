@@ -90,12 +90,12 @@ or the model developed within this project (<code>EFSAMV</code>,<code>EFSAV</cod
 </dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>see <code><a href="https://rdrr.io/pkg/doseresponsemodels/man/DR.html" class="external-link">doseresponsemodels::DR()</a></code> or <code><a href="https://rdrr.io/pkg/doseresponsemodels/man/DRQuick.html" class="external-link">doseresponsemodels::DRQuick()</a></code> for details on population and models.</p>
+    <p>see <code><a href="https://rpouillot.github.io/doseresponsemodels/reference/DR.html" class="external-link">doseresponsemodels::DR()</a></code> or <code><a href="https://rpouillot.github.io/doseresponsemodels/reference/DRQuick.html" class="external-link">doseresponsemodels::DRQuick()</a></code> for details on population and models.</p>
     </div>
     <div class="section level2">
     <h2 id="note">Note<a class="anchor" aria-label="anchor" href="#note"></a></h2>
     <p>This function uses (for all model but <code>JEMRA</code>) a linear approximation (<code>approxfun</code>)
-from the exact <code><a href="https://rdrr.io/pkg/doseresponsemodels/man/DR.html" class="external-link">doseresponsemodels::DR()</a></code> model evaluated on \(Dose = c(0,10^{seq(-5,12,length=1701)})\)
+from the exact <code><a href="https://rpouillot.github.io/doseresponsemodels/reference/DR.html" class="external-link">doseresponsemodels::DR()</a></code> model evaluated on \(Dose = c(0,10^{seq(-5,12,length=1701)})\)
 (if <code>Poisson=TRUE</code>) or \(c(0,10^{seq(0,12,length=2000)})\) (if <code>Poisson=FALSE</code>).
 Any Dose lower or higher than these ranges will lead to <code>NA</code>.</p>
     </div>
