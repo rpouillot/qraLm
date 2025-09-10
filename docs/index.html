@@ -74,15 +74,15 @@
 </h2>
 <ul>
 <li><p>You can install <code>qraLm</code> from <code>GitHub</code>: <a href="https://github.com/WorldHealthOrganization/qraLm" class="external-link uri">https://github.com/WorldHealthOrganization/qraLm</a>, using the <code>devtools</code> package, with the R code below.</p></li>
-<li><p>You must first install the <code>DRLm</code> package from <code>GitHub</code>: <a href="https://github.com/WorldHealthOrganization/DRLm/" class="external-link uri">https://github.com/WorldHealthOrganization/DRLm/</a>, which implements the dose-response models for Listeria monocytogenes.</p></li>
+<li><p>You must first install the <code>doseresponsemodels</code> package from <code>GitHub</code>: <a href="https://github.com/rpouillot/doseresponsemodels/" class="external-link uri">https://github.com/rpouillot/doseresponsemodels/</a>, which implements the dose-response models for Listeria monocytogenes.</p></li>
 <li><p>For Windows users it is recommended to install <code>Rtools</code> (<a href="https://cran.r-project.org/bin/windows/Rtools/" class="external-link uri">https://cran.r-project.org/bin/windows/Rtools/</a>) before.</p></li>
-<li><p>The packages on which <code>qraLm</code> depends are: <code>Hmisc</code>, <code>extraDistr</code>, <code>mc2d</code>, <code>matrixStats</code>, <code>DT</code>, <code>dplyr</code>, <code>ggplot2</code>, <code>plotly</code>, <code>DRLm</code> and <code>BH</code>; you should install them before installing <code>qraLm</code>.</p></li>
+<li><p>The packages on which <code>qraLm</code> depends are: <code>Hmisc</code>, <code>extraDistr</code>, <code>mc2d</code>, <code>matrixStats</code>, <code>DT</code>, <code>dplyr</code>, <code>ggplot2</code>, <code>plotly</code>, <code>doseresponsemodels</code> and <code>BH</code>; you should install them before installing <code>qraLm</code>.</p></li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://devtools.r-lib.org/" class="external-link">"devtools"</a></span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"WorldHealthOrganization/DRLm"</span><span class="op">)</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"WorldHealthOrganization/qraLm"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rpouillot/doseresponsemodels"</span><span class="op">)</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rpouillot/qraLm"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="using-qralm">Using qraLm<a class="anchor" aria-label="anchor" href="#using-qralm"></a>
