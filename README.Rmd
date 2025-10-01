@@ -33,7 +33,7 @@ The qraLm R package is designed for conducting Quantitative Risk Assessments (QR
 
 - You can install `qraLm` from `GitHub`: [https://github.com/WorldHealthOrganization/qraLm](https://github.com/WorldHealthOrganization/qraLm), using the `devtools` package, with the R code below.
 
-- You must first install the `doseresponsemodels` package from `GitHub`: [https://github.com/rpouillot/doseresponsemodels/](https://github.com/rpouillot/doseresponsemodels/), which implements the dose-response models for Listeria monocytogenes.
+- You must first install the `doseresponsemodels` package from `GitHub`: [https://github.com/WorldHealthOrganization/doseresponsemodels/](https://github.com/WorldHealthOrganization/doseresponsemodels/), which implements the dose-response models for Listeria monocytogenes.
 
 - For Windows users it is recommended to install `Rtools` ([https://cran.r-project.org/bin/windows/Rtools/](https://cran.r-project.org/bin/windows/Rtools/)) before.
 
@@ -44,8 +44,8 @@ The qraLm R package is designed for conducting Quantitative Risk Assessments (QR
 ```{r, eval=FALSE}
 
 if (!require("devtools")) install.packages("devtools")
-devtools::install_github("rpouillot/doseresponsemodels")
-devtools::install_github("rpouillot/doseresponsemodels")
+devtools::install_github("WorldHealthOrganization/doseresponsemodels")
+devtools::install_github("WorldHealthOrganization/qraLm")
 ```
 
 ## Using qraLm

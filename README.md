@@ -36,7 +36,7 @@ FAO/WHO Expert Meetings on Microbiological Risk Assessment
   `devtools` package, with the R code below.
 
 - You must first install the `doseresponsemodels` package from `GitHub`:
-  <https://github.com/rpouillot/doseresponsemodels/>, which implements
+  <https://github.com/WorldHealthOrganization/doseresponsemodels/>, which implements
   the dose-response models for Listeria monocytogenes.
 
 - For Windows users it is recommended to install `Rtools`
@@ -49,8 +49,8 @@ FAO/WHO Expert Meetings on Microbiological Risk Assessment
 ``` r
 
 if (!require("devtools")) install.packages("devtools")
-devtools::install_github("rpouillot/doseresponsemodels")
-devtools::install_github("rpouillot/qraLm")
+devtools::install_github("WorldHealthOrganization/doseresponsemodels")
+devtools::install_github("WorldHealthOrganization/qraLm")
 ```
 
 ## Using qraLm
