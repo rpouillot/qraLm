@@ -122,7 +122,6 @@ Ursula Gonzales-Barron \email{ubarron@ipb.pt}
 \keyword{contamination}
 \keyword{external}
 \keyword{injection}
-\keyword{internal}
 \keyword{salt}
 \keyword{smearing}
 \keyword{solution}

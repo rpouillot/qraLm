@@ -9,7 +9,7 @@
 #' @param ProbThisLot is
 #' @param Virulence  is
 #'
-#' @importFrom DRLm DR DRLogNormPoisson DRQuick
+#' @importFrom doseresponsemodels DR DRLogNormPoisson DRQuick
 #'
 #' @export
 #'

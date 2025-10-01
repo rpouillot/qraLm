@@ -35,21 +35,21 @@ FAO/WHO Expert Meetings on Microbiological Risk Assessment
   <https://github.com/WorldHealthOrganization/qraLm>, using the
   `devtools` package, with the R code below.
 
-- You must first install the `DRLm` package from `GitHub`:
-  <https://github.com/WorldHealthOrganization/DRLm/>, which implements
+- You must first install the `doseresponsemodels` package from `GitHub`:
+  <https://github.com/WorldHealthOrganization/doseresponsemodels/>, which implements
   the dose-response models for Listeria monocytogenes.
 
 - For Windows users it is recommended to install `Rtools`
   (<https://cran.r-project.org/bin/windows/Rtools/>) before.
 
 - The packages on which `qraLm` depends are: `Hmisc`, `extraDistr`,
-  `mc2d`, `matrixStats`, `DT`, `dplyr`, `ggplot2`, `plotly`, `DRLm` and
+  `mc2d`, `matrixStats`, `DT`, `dplyr`, `ggplot2`, `plotly`, `doseresponsemodels` and
   `BH`; you should install them before installing `qraLm`.
 
 ``` r
 
 if (!require("devtools")) install.packages("devtools")
-devtools::install_github("WorldHealthOrganization/DRLm")
+devtools::install_github("WorldHealthOrganization/doseresponsemodels")
 devtools::install_github("WorldHealthOrganization/qraLm")
 ```
 

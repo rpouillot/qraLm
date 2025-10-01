@@ -14,11 +14,12 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-8462-9775"))
            )
 Description: qraLm: A R package for quantitative risk assessment for Listeria monocytogenes in foods.
-URL: https://github.com/WorldHealthOrganization/qraLm
+URL: https://github.com/WorldHealthOrganization/qraLm, https://WorldHealthOrganization.github.io/qraLm/
 BugReports: https://github.com/WorldHealthOrganization/qraLm/issues
 Depends: R (>= 3.5.0)
-Imports: Rdpack, Hmisc, extraDistr, mc2d, matrixStats, DT, dplyr, shiny,
-         ggplot2, plotly, Rcpp, DRLm
+Imports: Rdpack (>= 2.6), Hmisc, extraDistr, mc2d, matrixStats, DT, dplyr, shiny,
+         ggplot2, plotly, Rcpp, doseresponsemodels
+Remotes: WorlHealthOrganization/doseresponsemodels
 LinkingTo: Rcpp, BH
 RdMacros: Rdpack
 License: MIT + file LICENSE
@@ -26,7 +27,7 @@ LazyLoad: yes
 LazyData: true
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 NeedsCompilation: no
 Suggests: knitr, rmarkdown, htmltools, testthat (>= 3.0.0)
 VignetteBuilder: knitr

@@ -39,7 +39,7 @@
 #'
 #' @author Ursula Gonzales-Barron \email{ubarron@ipb.pt}
 #'
-#' @keywords brine solution injection internal salt smearing external surface contamination transfer
+#' @keywords brine solution injection salt smearing external surface contamination transfer
 
 #' @references
 #'
