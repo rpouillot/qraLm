@@ -98,8 +98,10 @@ caDicing <- function(data = list(),
   Pi_0 <- mean(Pi_0_index)
 
   # # LG : I had this condition to consider the case where no Lm are transferred. Here I generate 1 cell
-  # if(Pi_0==1){Pi_0_index[1]=FALSE
-  # N_trans_lot[1,1]=1}
+  if(all(Pi_0_index)){
+    Pi_0_index[1]=FALSE
+    N_trans[1,1]=1
+    }
   #
   N_trans[Pi_0_index, ] <- N_trans[sample(which(!Pi_0_index), sum(Pi_0_index), replace = TRUE), ]
   #
