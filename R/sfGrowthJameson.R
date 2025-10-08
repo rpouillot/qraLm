@@ -220,7 +220,7 @@ sfGrowthJameson <- function(time,
   # Integrate in C
   # Note (need to extend the vectors for proper reference)
   if (any(whichCompet)) {
-    cat("Integrate over ", sum(whichCompet), " portions\n")
+    # cat("Integrate over ", sum(whichCompet), " portions\n")
     # browser()
     pb <- utils::txtProgressBar(max = sum(whichCompet))
     on.exit(close(pb))
