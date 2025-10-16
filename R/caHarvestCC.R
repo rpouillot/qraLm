@@ -109,7 +109,7 @@ caHarvestCC <- function(data = list(),
   zero_lines <- rowSums(N_total2) == 0
   prob_clean_batches <- mean(zero_lines)
   # Keeping only batches that ended up contaminated (from the clean pre-harvest fraction)
-  N_total2_c <- N_total2[!zero_lines, ]
+  N_total2_c <- N_total2[!zero_lines, ,drop=FALSE]
   # Check the number of remaining positive lots
   N_newly_stock <- nrow(N_total2_c)
 
